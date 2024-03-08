@@ -1,0 +1,111 @@
+*{
+    font-family: "Poppins", sans-serif;
+    list-style-type: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:  20px;
+    border-bottom: 1px solid #eee
+}
+.navbar__items ul{
+    display: flex;
+    gap: 20px;
+    font-size: 18px;
+}
+
+.logo{
+    color: #FF6600;
+}
+
+.hero{
+    background-image: url("https://img.freepik.com/free-vector/display-template-with-mobile-phones_79603-1245.jpg?t=st=1709795683~exp=1709799283~hmac=be74fd32e37f42dd2cc7303b253dbb8ea93ea37b69a6585638011c929465112f&w=1480");
+    height: 500px;
+    background-repeat: repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: white;
+ 
+}
+.hero::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5)
+}
+.hero h1{
+    color: white;
+}
+.about{
+    padding: 20px;
+    margin: 0 auto; 
+    /* TRBL - top right bottom left */
+    /* TB-LR - 0 20px */
+}
+.about h1{
+    text-align: center;
+}
+
+.contact{
+    padding: 20px;
+    margin: 0 auto; 
+    /* TRBL - top right bottom left */
+    /* TB-LR - 0 20px */
+}
+.contact h1{
+    text-align: center;
+}
+footer{
+    height: 100px;
+    background-color: #FF6600;
+    text-align: center;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#products h1{
+    text-align: center;
+}
+
+.products{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+    margin: 0 20px;
+    border: 1px solid #eee;
+    border: 8px;
+
+}
+.product-card{
+    border: 1px solid #eee;
+    box-shadow: 0 1px 2px 0 rgba(60,64,67,0.3),0 1px 3px 1px rgba(60,64,67,0.15);
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    padding: 20px;
+
+}
+.product-card img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
