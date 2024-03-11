@@ -3,14 +3,24 @@ body{
     padding: 0;
     font-family:"Poppins", sans-serif;
 }
+main{
+    margin-top: 75px;
+}
 
 
 nav{
     display: flex;
     flex-direction: row;
     align-items: center;
+    background-color: aliceblue;
     justify-content: space-between;
-    margin: 0 20px;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%vw;
 
 }
 nav div h1{
